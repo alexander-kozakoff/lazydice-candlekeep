@@ -1,0 +1,131 @@
+.sheet.journal-entry.candlekeep {
+  background-color: transparent;
+  box-shadow: var(--lazydice-focus-shadow);
+
+& .journal-sheet-container .journal-entry-content {
+
+  }
+
+& .journal-header {
+    margin: 0;
+  }
+
+& .journal-header input.title {
+    background: none;
+  }
+
+& .journal-header input.title:focus,
+& .journal-header input.title:hover,
+  {
+    box-shadow: var(--lazydice-focus-shadow);
+  }
+
+& .journal-entry-content {
+    line-height: 1.45;
+    /*border: 30px solid transparent;*/
+    /*border-image-source: var(--lazydice-page-border);*/
+    /*border-image-slice: 100;*/
+    /*border-image-width: 50px;*/
+    /*border-image-repeat: stretch;*/
+
+    /*background: #f3e7ca var(--lazydice-page-background)*/
+    /*center / 100% 100% no-repeat border-box;*/
+    background-color: #fff;
+    padding: 30px;
+
+& .journal-entry-pages {
+    margin: 0;
+  }
+
+& a:is(.content-link, .inline-roll), & span.roll-link a {
+                                         text-decoration-color: var(--lazydice-color);
+                                         padding: 0;
+& i { color: var(--lazydice-color); }
+}
+
+& a.content-link:hover, & a.editor-edit:hover { text-shadow: 0 0 8px var(--lazydice-color); }
+
+& a[data-action="request"] i { color: var(--lazydice-color); }
+
+& .roll-link a > i.fa-dice-d20, & a.inline-roll > i.fa-dice-d20 {
+                                    background: url("../assets/ui/d20.svg") no-repeat center / contain;
+                                  }
+}
+
+& .sidebar {
+& a:hover { text-shadow: 0 0 8px var(--lazydice-color); }
+& button {
+    background: var(--lazydice-color);
+    border: var(--narrative-border);
+    color: #fff;
+  }
+& button:hover, & button:focus { box-shadow: var(--lazydice-focus-shadow);}
+}
+
+& .book-navigation {
+    flex-grow: 0;
+    padding: 5px 0px;
+    margin: 0 10px 10px;
+    border: none;
+    opacity: .5;
+    transition: all 0.5s ease-out;
+
+&:hover {
+   opacity: 1;
+ }
+
+& ul {
+    display: flex;
+    gap: 5px;
+    margin: 0;
+    padding-inline: 1rem;
+    list-style: none;
+  }
+& li {
+    flex: 1 1 33%;
+  }
+& a {
+    display: block;
+    border: none;
+    background: none;
+    text-align: center;
+    text-decoration: none;
+  }
+& a[rel="prev"] {
+    text-align: start;
+&::before {
+   content: "\f060";
+   font-family: var(--font-awesome);
+   font-weight: bold;
+   padding-inline-end: 2px;
+ }
+}
+& a[rel="next"] {
+    text-align: end;
+&::after {
+   content: "\f061";
+   font-family: var(--font-awesome);
+   font-weight: bold;
+   padding-inline-start: 2px;
+ }
+}
+& a.parent {
+    text-align: center;
+&::before {
+   content: "\f062";
+   font-family: var(--font-awesome);
+   font-weight: bold;
+   padding-inline-end: 3px;
+ }
+}
+}
+
+& .scrollable {
+    padding: 0 0.5rem 1rem 1rem;
+    scrollbar-color: var(--lazydice-color) transparent;
+  }
+
+& img {
+    border: none;
+  }
+}

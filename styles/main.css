@@ -1,0 +1,60 @@
+@import url("variables.css");
+@import url("journal.css");
+@import url("blocks.css");
+
+/* Adventure Importer */
+.adventure-importer .candlekeep.window-content {
+    border-image-source: var(--lazydice-page-border);
+    background-image: var(--lazydice-page-background);
+    border-image-slice: 171 263 181 136;
+    border-image-width: 40px 40px 40px 40px;
+    border-image-repeat: stretch stretch;
+
+& h1, & h2 {
+            font-family: var(--dnd5e-font-modesto);
+            font-size: 2.5em;
+        }
+& h2 {
+      font-size: 2em;
+  }
+
+& aside.notable {
+      background-color: #d8e3e3;
+      margin: 20px 5px;
+      padding: 10px 28px 15px 30px;
+      border-width: 3px 1px;
+      border-style: solid;
+      border-color: #265f33 #c4cf27;
+      filter: drop-shadow(0 5px 8px var(--dnd5e-shadow-15));
+  }
+& aside.notable {
+      background: var(--fvtt-notable-bg);
+
+      border-color:
+              var(--fvtt-notable-border-left)
+              var(--fvtt-notable-border-right);
+  }
+& aside.notable::before, & aside.notable::after {
+                               content: "";
+                               background-image: url(../../../systems/dnd5e/ui/notable-right-corner.svg), url(../../../systems/dnd5e/ui/notable-left-corner.svg);
+                               background-position: 0, 100%;
+                               background-size: contain;
+                               background-repeat: no-repeat;
+                               height: 11px;
+                               position: absolute;
+                               left: 0;
+                               z-index: -1;
+                           }
+& aside.notable::before {
+      top: -13px;
+      right: 0;
+  }
+& aside.notable::after {
+      bottom: -13px;
+      right: 0;
+      transform: scaleY(-1);
+  }
+& aside.notable p:last-of-type {
+      margin-bottom: 0;
+  }
+}

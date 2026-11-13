@@ -1,0 +1,39 @@
+:root {
+
+  /* Adventure */
+
+  --lazydice-color: #4141ab;
+  --lazydice-page-background: url("../assets/ui/page-background.webp");
+  --lazydice-page-border: url("../assets/ui/border-image.webp");
+
+  /* Narrative */
+
+  --lazydice-narrative-bg: #DCE6F1;
+  --lazydice-narrative-border: #4141ab;
+
+  /* Advice */
+
+  --lazydice-advice-bg: url("../../../systems/dnd5e/ui/parchment.jpg");
+
+  /* Notable */
+
+  --lazydice-notable-bg: #CFE1E0;
+
+  /* Tables */
+
+  --lazydice-table-border: #EDEAE8;
+  --lazydice-table-header-bg: #DCE6F1;
+  --lazydice-table-header-border: #D0CAC5;
+  --lazydice-table-row-even: #DCE6F1;
+  --lazydice-table-row-odd: #C8DBD5;
+  --lazydice-table-row-hover: #C0CEAE;
+
+  /* Buttons */
+
+  --lazydice-button-bg: var(--lazydice-color);
+  --lazydice-button-text: #fff;
+
+  /* Focus */
+
+  --lazydice-focus-shadow: 0 0 5px var(--lazydice-color);
+}

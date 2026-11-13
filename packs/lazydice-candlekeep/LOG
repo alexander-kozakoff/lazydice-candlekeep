@@ -1,0 +1,17 @@
+2026/11/12-16:25:19.340 9b2c Recovering log #133
+2026/11/12-16:25:19.345 9b2c Level-0 table #135: started
+2026/11/12-16:25:19.402 9b2c Level-0 table #135: 725703 bytes OK
+2026/11/12-16:25:19.408 9b2c Delete type=0 #133
+2026/11/12-16:25:19.408 9b2c Delete type=3 #132
+2026/11/12-18:10:20.309 2a10 Compacting 1@0 + 1@1 files
+2026/11/12-18:10:20.379 2a10 Generated table #137@0: 1 keys, 725703 bytes
+2026/11/12-18:10:20.379 2a10 Compacted 1@0 + 1@1 files => 725703 bytes
+2026/11/12-18:10:20.381 2a10 compacted to: files[ 0 1 0 0 0 0 0 ]
+2026/11/12-18:10:20.381 2a10 Delete type=2 #127
+2026/11/12-18:10:20.381 2a10 Delete type=2 #135
+2026/11/12-18:44:25.079 2a10 Level-0 table #139: started
+2026/11/12-18:44:25.154 2a10 Level-0 table #139: 1191788 bytes OK
+2026/11/12-18:44:25.156 2a10 Delete type=0 #136
+2026/11/12-18:48:59.872 2a10 Level-0 table #141: started
+2026/11/12-18:49:00.001 2a10 Level-0 table #141: 1533326 bytes OK
+2026/11/12-18:49:00.003 2a10 Delete type=0 #138
